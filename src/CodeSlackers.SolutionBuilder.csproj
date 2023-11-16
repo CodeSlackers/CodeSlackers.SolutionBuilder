@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Kurt Mabery</Authors>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackAsTool>True</PackAsTool>
+	<ToolCommandName>buildsln</ToolCommandName>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+	<Version>0.1.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\License.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="slacker_HostedConsole" Version="1.0.3" />
+    <PackageReference Include="CliWrap" Version="3.6.4" />
+  </ItemGroup>
+
+</Project>

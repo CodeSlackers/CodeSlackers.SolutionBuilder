@@ -15,7 +15,7 @@ dotnet new tool-manifest
 ```shell
 dotnet nuget add source  <codePath>\CodeSlackers.SolutionBuilder\src\bin\Release -n LocalPackageSource
 cd <codePath>\CodeSlackers.SolutionBuilder\src\bin\Release
-dotnet tool install CodeSlackers.SolutionBuilder --add-source LocalPackageSource --version 0.1.0
+dotnet tool install -g CodeSlackers.SolutionBuilder --add-source LocalPackageSource --version 0.1.0
 ```
 
 ### 2 Run

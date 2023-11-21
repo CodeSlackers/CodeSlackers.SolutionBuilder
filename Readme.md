@@ -8,6 +8,7 @@ wraps dotnetcli in a series of user prompts to build out a full solution
 ```shell
 cd <codePath>\CodeSlackers.SolutionBuilder
 dotnet pack
+dotnet new tool-manifest
 ```
 
 * In \CodeSlackers.SolutionBuilder root folder

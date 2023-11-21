@@ -3,7 +3,14 @@ wraps dotnetcli in a series of user prompts to build out a full solution
 
 ## How to use
 ### 1. Install
-In \CodeSlackers.SolutionBuilder root folder
+* Build the solution in release mode
+* pack the solution
+```shell
+cd <codePath>\CodeSlackers.SolutionBuilder
+dotnet pack
+```
+
+* In \CodeSlackers.SolutionBuilder root folder
 ```shell
 dotnet nuget add source  <codePath>\CodeSlackers.SolutionBuilder\src\bin\Release -n LocalPackageSource
 cd <codePath>\CodeSlackers.SolutionBuilder\src\bin\Release

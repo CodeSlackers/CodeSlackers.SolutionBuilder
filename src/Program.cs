@@ -11,7 +11,7 @@ class Program
     private static string _solutionName = string.Empty;
     static async Task Main(string[] args)
     {
-        if (args.Length > 0 && string.IsNullOrEmpty(args[0]))
+        if (args.Length > 0 && !string.IsNullOrEmpty(args[0]))
         {
             _solutionName = args[0];
             _workingDirectory = Directory.GetCurrentDirectory();
